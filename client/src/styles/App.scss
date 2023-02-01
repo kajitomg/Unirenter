@@ -1,0 +1,33 @@
+@import  'Null','Fonts','Colors';
+
+::-webkit-scrollbar {
+	width: 2px; /* ширина для вертикального скролла */
+	height: 1px; /* высота для горизонтального скролла */
+	background-color: $white;
+}
+
+/* ползунок скроллбара */
+::-webkit-scrollbar-thumb {
+	
+	background-color: $grey;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: $grey;
+}
+
+
+.page{
+	flex: 100% 1 0;
+	padding: 0 40px;
+	@media (max-width:1366px) {
+		padding: 0 33px;
+	}
+	@media (max-width:1100px) {
+		padding: 0 19px;
+	}
+	@media (max-width:768px){
+		padding: 0 8px;
+	}
+}

@@ -1,0 +1,148 @@
+@import './../../styles/Colors.scss';
+
+.root {
+
+	// .like__info
+	.empty{
+		cursor: default;
+		margin: 20px;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		span{
+			color: $grey;
+			font-size: 20px;
+
+		}
+
+	}
+	.info {
+		display:flex;
+		align-items: center;
+		justify-content: flex-start;
+		height: 58px;
+		
+		@media (max-width:1100px){
+			flex-wrap:nowrap;
+		}
+		@media (max-width:350px){
+			height: 33px;
+			
+		}
+	// .info__text
+
+		.text {
+			font-size: 28px;
+			flex: 0 1 auto;
+			margin: 0 20px 0 0 ;
+			white-space: nowrap;
+			color:$black;
+			
+			@media (max-width:890px){
+				display: none;
+			}
+			@media (max-width:767px){
+				font-size: 20px;
+			}
+			@media (max-width:500px){
+				font-size: 16px;
+				margin: 0 5px 0 0;
+			}
+			@media (max-width:450px){
+				white-space: normal;
+				line-height: 16px;
+
+			}
+		}
+		.makean_wrapper{
+			height: 100%;
+			min-width: 480px;
+			flex: 0 1 auto;
+			margin: 0 0 0 10px;
+			flex: 0 1 431px;
+			max-width:431px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			transition: 0.2s ease-in-out;
+			@media (max-width:890px){
+				min-width: auto;
+
+			}
+			.makean{
+				.input{
+					@media(max-width:1100px) {
+						display: block;
+					}
+				}
+				.button{
+					@media(max-width:1100px) {
+						font-size: 16px;
+						letter-spacing: 0.8px;
+						border-radius: 0 60px 60px 0;
+						flex:1 0 40%;
+					}
+					@media (max-width:350px){
+						font-size: 12px;
+					}
+				}
+			}
+
+		}
+	}
+	.card {
+		cursor: pointer;
+		position: relative;
+		overflow: hidden;
+		padding: 10px;
+		display: flex;
+		flex: 0 1 25%;
+		flex-direction: column;
+		transition:0.2s ease-in-out;
+	
+	}
+}
+.cards {
+	display: flex;
+	min-height: 50vh;
+	height: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		transition:0.2s ease-in-out;
+		flex-wrap: wrap;
+		
+		@media (max-width:585px){
+			justify-content: center;
+		}
+}
+.cards.more div{
+		flex: 0 1 25%;
+		@media (max-width:1250px) {
+			flex: 0 1 50%;
+		}
+		@media (max-width:585px){
+			flex: 0 1 100%;
+		}
+
+	
+}
+.cards.less div{
+		flex: 0 1 33%;
+		@media (max-width:1250px) {
+			flex: 0 1 50%;
+		}
+		@media (max-width:585px){
+			flex: 0 1 100%;
+		}
+}
+
+// .like__cards
+.catalog {
+
+	// .catalog__loading
+
+	.loading {
+	}
+}

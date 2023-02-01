@@ -1,0 +1,15 @@
+@import '../../styles/Colors.scss';
+
+
+	.root{
+		cursor: pointer;
+		position: relative;
+		overflow: hidden;
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		transition:0.2s ease-in-out;
+		
+	
+	}
+	

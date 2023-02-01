@@ -1,0 +1,64 @@
+@import './../../styles/Colors.scss';
+
+.root {
+	display: flex;
+	width: 100%;
+	height: 0;
+	overflow: hidden;
+	opacity:0;
+	transition: 0.2s ease-in-out;
+	&.available{
+		height: auto;
+		padding: 0 10px;
+		opacity: 1;
+	}
+	&.hide{
+		display: none;
+	}
+	// .path__branch
+
+	.branch {
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		margin: 0 15px;
+		font-size: 12px;
+		font-weight: 350;
+		font-family: 'Circe';
+		color:$grey;
+		position: relative;
+		transition: 0.2s ease-in-out;
+		&:hover{
+			color: $black;
+		}
+		&:first-child{
+			margin: 0 15px 0 0;
+		}
+		&::after{
+			position: absolute;
+			content: '';
+			top: 50%;
+			right: -15px;
+			width: 4.45px;
+			height: 4.45px;
+			background: $orange;
+			transform: rotate(45deg) translate(0,-100%)
+		}
+		&:last-child::after{
+			position: absolute;
+			content: '';
+			top: 0;
+			right: 0;
+			width: 0;
+			height: 0;
+			background: transparent;
+			transform: rotate(0) translate(0,0)
+		}
+		@media (max-width:585px){
+			font-size: 8px;
+			line-height: 10px;
+		}
+			
+		
+	}
+}

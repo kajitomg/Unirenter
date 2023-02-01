@@ -1,0 +1,57 @@
+@import '../../../../styles/Colors';
+
+.root{
+		flex: 1 0 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	
+	
+	.buttons {
+		flex: 0 1 1530px;
+		min-height: 23.39px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 12.5% 0 0 ;
+		@media (max-width:1250px) {
+			flex: 0 1 900px;
+			margin: 0 5% 0 0 ;
+		}
+		@media (max-width:1150px) {
+			margin: 0 0 0 0 ;
+		}
+		@media (max-width:1100px) {
+			flex: 0 1 700px;
+			margin: 0 12.5% 0 0 ;
+		}
+		@media (max-width:716px){
+			margin: 0 5% 0 0 ;
+		}
+	}
+	
+	.catalog {
+		padding: 0 10px;
+		display: flex;
+	}
+	.loading{
+		width: 150px;
+		height: 23.39px;
+			&.disabled{
+				display: none;
+			}	
+			
+	}
+	
+}
+
+@keyframes loading {
+	0%{
+		transform:rotate(120deg) translate(0,190%);
+	}
+	100%{
+		transform:rotate(120deg) translate(0,-190%);
+	}
+}
+	
+

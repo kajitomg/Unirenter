@@ -1,0 +1,164 @@
+@import '../../styles/Colors';
+
+.root {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	transition: 0.2s ease-in-out;
+	height: 0;
+	padding: 0;
+	opacity: 0;
+	@media(max-width:1100px) {
+		padding: 36.5px 0;
+	}
+	@media(max-width:780px) {
+		padding: 30px 0;
+	}
+	&.available{
+		padding: 50px 10px;
+		height: auto;
+		opacity: 1;
+	}
+	// .interactive__columns
+
+	.columns {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	// .interactive__recording-wrapper
+
+	.recording_wrapper {
+		flex: 1 0 100%;
+		max-width:431px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		transition: 0.2s ease-in-out;
+		@media(max-width:1100px) {
+			max-height: 35px;
+			max-width:90px;
+		}
+	}
+
+	// .interactive__column
+
+	.column {
+		display: flex;
+		justify-content: center;
+		justify-content: flex-start;
+		align-items: center;
+		flex: 1 0 33%;
+		transition: 0.2s ease-in-out;
+		@media(max-width:550px) {
+			flex: 1 0 100%;
+		}
+	}
+
+	// .interactive__loadmore-wrapper
+
+	.loadmore_wrapper {
+		flex: 1 0 100%;
+		display: flex;
+		justify-content: center;
+	}
+
+	// .interactive__chat-wrapper
+
+	.chat_wrapper {
+		flex: 1 0 100%;
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+.loadmore {
+	// .loadmore__text
+
+	.text {
+		letter-spacing: 4px;
+		text-transform: uppercase;
+		text-align: center;
+		font-family: 'Tenor Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 40px;
+		color: $orange;
+		cursor: pointer;
+		position: relative;
+		&::after{
+			transition:0.2s ease-in-out;
+			position: absolute;
+			content:'';
+			width: 71.1px;
+			top: auto;
+			bottom: -5px;
+			left: 50%;
+			transform: translate(-50%,0);
+			height: 1px;
+			background: $orange;
+		}
+		&::before{
+			transition:0.2s ease-in-out;
+			position: absolute;
+			content:'';
+			width: 4.6px;
+			top: auto;
+			bottom: -4.5px;
+			left: 50%;
+			transform: translate(-50%,50%) rotate(45deg);
+			height: 4.6px;
+			background: $orange;
+		}
+		transition:0.2s ease-in-out;
+		&:hover{
+			color: $flesh	;
+			&::after{
+				background: $flesh	;
+			}
+			&::before{
+				background: $flesh	;
+			}
+		}
+	}
+}
+.chat {
+	cursor: pointer;
+	position: relative;
+
+	// .chat__icon
+	.circle{
+		position: relative;
+		top:0;
+		left:0;
+		border-radius: 50%;
+		width: 60px;
+		height: 60px;
+		background: $orange;
+		transition:0.2s ease-in-out;
+		&:hover{
+			background: $flesh;
+		}
+	}
+	.icon {
+		display: flex;
+		align-items: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: auto;
+		height: auto;
+		transform: translate(-50%, -50%);
+		svg{
+			path{
+				stroke: $white;
+			}
+		}
+	}
+	&:hover{
+		.circle{
+			background: $flesh;
+		}
+	}
+}

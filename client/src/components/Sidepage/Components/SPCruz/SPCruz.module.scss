@@ -1,0 +1,26 @@
+@import '../../../../styles/Colors';
+
+
+.root{
+		cursor: pointer;
+		position: relative;
+		flex: 0 1 24px;
+		height: 24px;
+		span{
+			position: absolute;
+			background: $black;
+			left: 0;
+			width: 100%;
+			height: 1px;
+		}
+		span:first-child{
+			top: 11.5px;
+			transform: rotate(-45deg)
+		}
+		span:last-child{
+			top: auto;
+			bottom:  11.5px;
+			transform: rotate(45deg);
+		}
+		animation: cruzAnim 0.2s ease-in-out forwards;
+}

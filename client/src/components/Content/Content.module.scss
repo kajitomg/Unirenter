@@ -1,0 +1,12 @@
+.root{
+	margin-top: 143px;
+	
+	@media (max-width:768px){
+		margin-top: 60px;
+	}
+	&.small{
+
+		margin-top: 78px;
+
+	}
+}

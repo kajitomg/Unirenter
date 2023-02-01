@@ -1,0 +1,49 @@
+@import '../../styles/Colors';
+
+.root{
+	width: 100%;
+	min-height: calc((34.25vh*2) * 2);
+	.empty{
+		margin: 20px;
+		cursor: default;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		span{
+			color: $grey;
+			font-size: 20px;
+		}
+	}
+
+}
+.cards{
+	height: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		transition:0.2s ease-in-out;
+		flex-wrap: wrap;
+		
+		@media (max-width:585px){
+			justify-content: center;
+		}
+}
+.cards.more div{
+		flex: 0 1 25%;
+		@media (max-width:1250px) {
+			flex: 0 1 50%;
+		}
+		@media (max-width:585px){
+			flex: 0 1 100%;
+		}
+}
+.cards.less div{
+		flex: 0 1 33%;
+		@media (max-width:1250px) {
+			flex: 0 1 50%;
+		}
+		@media (max-width:585px){
+			flex: 0 1 100%;
+		}
+	
+}

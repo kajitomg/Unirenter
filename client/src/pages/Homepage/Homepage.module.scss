@@ -1,0 +1,44 @@
+@import '../../styles/Colors';
+
+
+.root {
+	z-index: 1;
+	min-height: calc((28.425vh*1.3029) * 2);
+	width: 100%;
+	@media (max-width:549px) {
+		min-height: calc((28.425vh* 1.38) * 2);
+	}
+
+	.gallery {
+	}
+}
+.gallery {
+	display: flex;
+	flex-direction: column;
+	min-height: calc((28.425vh* 1.3029) * 2);
+	@media (max-width:549px) {
+		min-height: calc((28.425vh* 1.38) * 2);
+	}
+	.top{
+
+	}
+	.bottom{
+
+	}
+	.bottom.row {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+
+	.column {
+		flex: 1 0 33.3333%;
+		align-items: flex-start;
+	}
+
+}

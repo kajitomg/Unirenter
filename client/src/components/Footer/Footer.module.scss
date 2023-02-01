@@ -1,0 +1,32 @@
+@import '../../styles/Colors';
+
+.root{
+	background:$white;
+	font-family: 'Circe';
+	font-style: normal;
+	padding: 50px 40px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	transition: 0.2s ease-in-out;
+	@media (max-width:1366px) {
+		padding: 50px 33px;
+	}
+	@media (max-width:1100px) {
+		padding: 50px 19px;
+	}
+	@media(max-width:1000px) {
+		flex-direction: row-reverse;
+	}
+	@media (max-width:768px){
+		padding: 30px 8px;
+	}
+	@media (max-width:500px){
+		justify-content: flex-end;
+		flex-wrap: wrap;
+	}
+	.categories {
+	}
+	.details {
+	}
+}

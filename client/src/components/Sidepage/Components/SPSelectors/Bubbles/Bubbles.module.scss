@@ -1,0 +1,28 @@
+@import '../../../../../styles/Colors.scss';
+
+.root{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+
+}
+.element{
+	line-height: 16px;
+	flex: 0 1 auto;
+	margin: 0 10px 0 0;
+	border-radius: 50%;
+	border: 1px solid rgb(197, 197, 197);
+	font-size: 18px;
+	font-weight: 500;
+	color: $black;
+	padding: 10px;
+	font-size: 14px;
+	transition: 0.2s ease-in-out;
+	&:hover{
+		color: $orange;
+	}
+	&.available{
+		color: $orange;
+
+	}
+}

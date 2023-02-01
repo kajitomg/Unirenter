@@ -1,0 +1,88 @@
+@import '../../../../styles/Colors.scss';
+
+.root {
+	flex: 1 0 14%;
+	max-width: 230px;
+	color: $black;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+	.loading{
+		width: 100%;
+		height: 20px;
+	}
+	.title {
+		white-space: nowrap;
+		font-family: 'Tenor Sans';
+		font-style: normal;
+		font-size: 24px;
+		line-height: 140%;
+		margin: 0 0 20px 0;
+		transition: 0.2s ease-in-out;
+		@media(max-width:780px) {
+			font-size: 16px;
+		}
+	}
+	.mail {
+		font-weight: 350;
+		font-size: 18px;
+		line-height: 140%;
+		transition: 0.2s ease-in-out;
+		@media(max-width:780px) {
+			font-size: 12px;
+		}
+	}
+	.phonenumber {
+		margin: 10px 0 0 0 ;
+		font-weight: 350;
+		font-size: 18px;
+		line-height: 140%;
+		color: $orange;
+		transition: 0.2s ease-in-out;
+		@media(max-width:780px) {
+			font-size: 12px;
+		}
+	}
+	.wrapper{
+		display: flex;
+		flex-direction: column;
+		transition: 0.2s ease-in-out;
+		@media(max-width:780px) {
+			flex-direction: row;
+		}
+	}
+	.socials {
+		display: flex;
+		margin: 29px 0;
+		img{
+		background:$white;
+		}
+	}
+	.general{
+		display:flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.address {
+		font-weight: 350;
+		font-size: 16px;
+		line-height: 140%;
+		color: $grey;
+		transition: 0.2s ease-in-out;
+		@media(max-width:780px) {
+			font-size: 12px;
+		}
+	}
+	.goto {
+		margin: 10px 0 0 0 ;
+		font-weight: 350;
+		font-size: 16px;
+		line-height: 140%;
+		color: $orange;
+		transition: 0.2s ease-in-out;
+		@media(max-width:780px) {
+			font-size: 12px;
+		}
+	}

@@ -1,0 +1,46 @@
+@import './../../../../styles/Colors.scss';
+
+.root  {
+	display:flex;
+	overflow: auto;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	height: 0;
+	opacity: 0;
+	
+	&.available{
+		height: auto;
+		opacity: 1;
+
+	}
+	&::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+}
+	.element {
+		cursor: pointer;
+		margin: 0 10px;
+		white-space: nowrap;
+		font-family: 'Tenor Sans';
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 130%;
+		color: $black;
+		@media (max-width:400px) {
+			font-size: 12px;
+		}
+		&:first-child{
+			margin: 0;
+		}
+		&.available{
+			color:$orange;
+		}
+		&.loading{
+			min-width: 150px;
+			height:100%;
+			&:first-child{
+				margin: 0 10px;
+			}
+		}
+	}
+}

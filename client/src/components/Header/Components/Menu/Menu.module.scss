@@ -1,0 +1,19 @@
+@import '../../../../styles/Colors';
+
+
+		.header {
+			display: flex;
+			flex: 0 1 67px;
+			align-items: flex-start;
+			justify-content: flex-start
+		}
+
+		.buttons {
+			margin: 25px 0;
+			display: flex;
+			justify-content: space-around;
+			min-height: 51px;
+		}
+	
+	
+

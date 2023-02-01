@@ -1,0 +1,32 @@
+@import '../../../../../styles/Colors';
+
+.root{
+	cursor: pointer;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background:inherit;
+	align-items: center;
+	border-radius: inherit;
+	height: 100%;
+	flex:0 1 220px;
+	max-height: 51px;
+	background: transparent;
+	border-radius: 10px;
+	border: 1px solid $grey;
+	transition: 0.2s ease-in-out;
+	&:hover{
+		border: 1px solid $black;
+		.text{
+			color: $black;
+		}
+	}
+	.text{
+		color: $grey;
+		font-size: 18px;
+		transition: 0.2s ease-in-out;
+		@media(max-width:560px) {
+			font-size: 10px;
+		}
+	}
+}

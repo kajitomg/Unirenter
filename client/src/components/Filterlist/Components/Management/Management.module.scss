@@ -1,0 +1,75 @@
+@import './../../../../styles/Colors.scss';
+
+.views {
+	display: flex;
+	align-items: center;
+	margin: 0 30px 0 0;
+	opacity: 0;
+	transition: 0.2s ease-in-out;
+	&.available{
+		margin: 0 30px 0 0;
+		opacity: 1;
+
+	}
+	.text {
+		margin:  0 10px 0 0;
+		color: $black;
+		font-family: 'Circe';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 130%;
+	}
+	.buttons {
+		
+	}
+	.viewbutton {
+		margin: 0 2px;
+		color: $black;
+		font-family: 'Circe';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 130%;
+		transition: 0.2s ease-in-out;
+		&.available{
+			color: $grey;
+		}
+	}
+}
+.filterbutton {
+	display: flex;
+	.text {
+		margin:  0 10px 0 0;
+		font-family: 'Tenor Sans';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 130%;
+		color: $black;
+	}
+	.image {
+		position: relative;
+		width: 18px;
+		height: 100%;
+		span{
+			position: absolute;
+			width: 100%;
+			height:1px;
+			background: $black;
+			top: 30%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			&:nth-child(2){
+				top: 50%;
+				width: 66%;
+			}
+			&:nth-child(3){
+				top: auto;
+				bottom: 30%;
+				width: 33%;
+				
+			}
+		}
+	}
+}

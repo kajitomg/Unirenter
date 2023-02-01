@@ -1,0 +1,25 @@
+@import './../../styles/Colors.scss';
+
+.root{
+	
+	margin: 5px 0;
+	width: 100%;
+	transition: 0.2s ease-in-out;
+	display: none;
+		span{
+			font-size: 28px;
+			font-family: 'Tenor Sans';
+			line-height: 140%;
+			color: $black;
+			@media (max-width:585px){
+				font-size: 16px;
+			}
+
+		}
+		&.available{
+			margin: 0;
+			opacity: 0;
+			height: 0;
+			display: none;
+		}
+}

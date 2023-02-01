@@ -1,0 +1,63 @@
+@import '../../../../styles/Colors';
+
+.root{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	img{
+		cursor: pointer;
+		object-fit: cover;
+	}
+	@media (max-width:1100px) {
+		img{
+			height: 24px;
+		}
+		align-items: flex-start;
+	}
+
+	@media (max-width:768px) {
+		flex: 0 0 115px;
+		img{
+			max-width: 115px;
+			height: 13px;
+		}
+	}
+	.types {
+		margin: 12px 0 0 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		@media (max-width:768px) {
+			margin: 3px 0 0 0;
+		}
+	}
+	.dot{
+		width:4px;
+		height: 4px;
+		transform: rotate(45deg);
+		background: $orange;
+	}
+	.type {
+		font-size: 14px;
+		margin: 0 10px;
+		transition: 0.2s ease-in-out;
+
+		&.available{
+			color:$orange;
+		}
+
+		@media (max-width:1100px) {
+			&:first-child{
+				
+				margin: 0 10px 0 0;
+			}
+		}
+
+		@media (max-width:768px) {
+			font-size: 8px;
+			margin: 0 6px;
+		}
+	}
+
+}

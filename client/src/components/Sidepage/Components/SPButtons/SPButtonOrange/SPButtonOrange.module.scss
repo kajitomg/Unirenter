@@ -1,0 +1,28 @@
+@import '../../../../../styles/Colors';
+
+.root{
+	cursor: pointer;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background:inherit;
+	align-items: center;
+	border-radius: inherit;
+	height: 100%;
+	flex:0 1 220px;
+	max-height: 51px;
+	background: $orange;
+	border-radius: 10px;
+	transition: 0.2s ease-in-out;
+	&:hover{
+		background: $flesh;
+	}
+	.text{
+		color: $white;
+		font-size: 18px;
+		transition: 0.2s ease-in-out;
+		@media(max-width:560px) {
+			font-size: 10px;
+		}
+	}
+}

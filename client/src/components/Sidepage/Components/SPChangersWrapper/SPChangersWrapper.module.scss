@@ -1,0 +1,14 @@
+@import '../../../../styles/Colors';
+
+.root{
+		font-size: 18px;
+		display: flex;
+		flex: 1 1 100%;
+		justify-content: space-around;
+		align-items: center;
+		@media(max-width:560px) {
+			font-size: 10px;
+			flex: 1 1 100%;
+			width: 100%;
+		}
+}

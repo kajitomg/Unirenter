@@ -1,0 +1,28 @@
+@import '../../styles/Colors';
+
+
+.root{
+	position: fixed;
+	z-index: 1000;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	font-size: 10px;
+	top: 0;
+	left: auto;
+	right: 0;
+	width: 560px;
+	height: 100%;
+	background: $white;
+	padding: 20px 40px;
+	transform: translate(100%,0);
+	transition: transform 0.3s linear;
+	&.available{
+		transform: translate(0,0);
+	}
+	@media(max-width:560px) {
+		width: 100%;
+		padding: 15px 8px;
+	}
+
+}
